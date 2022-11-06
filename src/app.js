@@ -23,6 +23,10 @@ try {
         }
         console.log(`http://localhost:${port}`)
     })
+
+    app.get("/", (req, res) => {
+        res.status(200).json({message: "Fullstack Challenge 2021 🏅 - Space Flight News"})
+    })
 } catch (error) {
     console.log(error.message)
 }
